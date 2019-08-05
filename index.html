@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>eMotions</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="third_party_files/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="third_party_files/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation Bar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <!-- Navigation Brand Start -->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">eMotions</span>
+            <span class="d-none d-lg-block sidebar-icon">
+            </span>
+        </a>
+        <!-- Navigation Brand End -->
+        <!-- Navigation Bar Content Start -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item Emotion">
+                    <a class="nav-link js-scroll-trigger" href="#Emotions">Emotions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#Gifs">Gifs</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#Images">Images</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#Videos">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#Movies">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#Books">Books</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Navigation Bar Content End -->
+  </nav>
+    <!-- Navigation Bar End -->
+
+  <!-- Container Fluid Start -->
+  <div class="container-fluid p-0">
+
+    <!-- Emotions Section Start -->
+    <section class="emotion-section p-3 p-lg-5 d-flex align-items-center" id="Emotions">
+      <div class="w-100">
+        <h1 class="mb-0">E<span class="text-primary">Motions</span></h1>
+        <div class="emotion-item d-flex flex-column flex-md-row justify-content-between">
+          <span>
+            <div class="subheading mb-5">The App that helps you manage your mood. </div>
+            <p class="lead mb-5"><span class="text-primary">Click one of the icons below to let us know how you feel.</span>  We will surprise you with a range of entertainment options that match your mood. To navigate through the entertainment options, just use the sidebar to your left.  Moody? Changing your mood is easy! <span class="text-primary">Click the emotion or the Icon to your left to come back here</span></p>
+            <div class="emotion-icons mb-5">
+              <a>
+                <i class="fas fa-smile mood" value="happy"></i>
+              </a>
+              <a>
+                <i class="fas fa-sad-tear mood" value="sad"></i>
+              </a>
+              <a>
+                <i class="fas fa-angry mood" value="angry"></i>
+              </a>
+              <a>
+                <i class="fas fa-meh-blank mood" value="calm"></i>
+              </a>
+            </div>
+          </span>
+          <div class="picture-upload text-md-right">
+            <div class="mb-3 picture-placeholder">
+              <img src="img/pictureup.png" height="250" alt="upload your picture" class="placeholder">
+            </div>
+            <div class="mb-3">
+              <input type="file" onchange="pictureUpload()">
+            </div>
+            <div class="mb-3">
+              <img src="" height="250" alt="" class="img-url">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Emotions Section End -->
+
+    <hr class="m-0">
+
+    <!-- Gifs Section Start -->
+    <section class="emotion-section p-3 p-lg-5 d-flex align-items-center" id="Gifs">
+      <div class="w-100">
+        <h2 class="mb-5">Gifs</h2>
+
+        <div class="emotion-item d-flex flex-column flex-md-row justify-content-center mb-5">
+          <div class="emotion-content" id="Gif-display">
+            <div class="mb-3 gif-content">
+              <img src="img/best-windows-10-screensavers-header-800x400.jpg" alt="">
+            </div>
+            <div class="gif-forward-back text-md-center">
+              <a><i class="fas fa-arrow-circle-left" id = "gif-back"></i></a>
+              <a><i class="fas fa-arrow-circle-right" id = "gif-forward"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gifs Section End -->
+
+    <hr class="m-0">
+
+    <!-- Images Section Start -->
+    <section class="emotion-section p-3 p-lg-5 d-flex justify-content-center" id="Images">
+      <div class="w-100">
+        <h2 class="mb-5">Images</h2>
+
+        <div class="emotion-item d-flex flex-column flex-md-row justify-content-center mb-5">
+          <div class="emotion-content" id="image-display">
+            <div class="mb-3 image-content">
+              <img src="img/best-windows-10-screensavers-header-800x400.jpg" alt="">
+            </div>
+            <div class="imgage-forward-back text-md-center">
+              <a><i class="fas fa-arrow-circle-left" id = "img-back"></i></a>
+              <a><i class="fas fa-arrow-circle-right" id = "img-forward"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Images Section End -->
+
+    <hr class="m-0">
+
+    <!-- Videos Section Start -->
+    <section class="emotion-section p-3 p-lg-5 d-flex align-items-center" id="Videos">
+      <div class="w-100">
+        <h2 class="mb-5">Videos</h2>
+
+        <div class="emotion-item d-flex flex-column flex-md-row justify-content-center mb-5">
+          <div class="emotion-content" id="video-display">
+            <div class="mb-3 video-content">
+            </div>
+            <hr class="m-0">
+            <div class="mb-3 main-video-content overflow-auto">
+            </div>
+            <hr class="m-0">
+
+        </div>
+      </div>
+    </section>
+    <!-- Videos Section End -->
+
+    <hr class="m-0">
+
+
+    <!-- Movies Section Start -->
+    <section class="emotion-section p-3 p-lg-5 d-flex align-items-center" id="Movies">
+      <div class="w-100">
+        <h2 class="mb-5">Movies</h2>
+
+        <div class="emotion-item d-flex flex-column flex-md-row justify-content-center mb-5">
+          <div class="emotion-content" id="movie-display">
+            <div class="mb-3 movie-content">
+              <img src="img/best-windows-10-screensavers-header-800x400.jpg" alt="">
+            </div>
+            <div class="movie-forward-back text-md-center">
+              <a><i class="fas fa-arrow-circle-left" id = "movie-back"></i></a>
+              <a><i class="fas fa-arrow-circle-right" id = "movie-forward"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Movies Section End -->
+
+    <hr class="m-0">
+
+    <!-- Videos Section Start -->
+    <section class="emotion-section p-3 p-lg-5 d-flex align-items-center" id="Videos">
+      <div class="w-100">
+        <h2 class="mb-5">Videos</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-angular"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-react"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-sass"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-less"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-wordpress"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-gulp"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-grunt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+        </ul>
+
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Mobile-First, Responsive Design</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Browser Testing &amp; Debugging</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Functional Teams</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Agile Development &amp; Scrum</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Videos Section End -->
+
+
+    <hr class="m-0">
+
+    <!-- Books Section Start -->
+    <section class="emotion-section p-3 p-lg-5 d-flex align-items-center" id="Books">
+      <div class="w-100">
+        <h2 class="mb-5">Awards &amp; Certifications</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Google Analytics Certified Developer</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Mobile Web Specialist - Google Certification</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            2<sup>nd</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - James Buchanan High School - Hackathon 2006</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            3<sup>rd</sup>
+            Place - James Buchanan High School - Hackathon 2005</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Books Section End -->
+    
+  </div>
+  <!-- Container Fluid End -->
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <!-- cloudflare Start-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <!-- cloudflare End-->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="third_party_files/jquery/jquery.min.js"></script>
+  <script src="third_party_files/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="third_party_files/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- IMPORTANT TO HAVE -->
+  <!-- Firebase Core JavaScript Link -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <!-- Specific Firebase products we want (Database) -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <!-- firebase cloud storage -->
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-storage.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/style.js"></script>
+  <script src="js/face_recognition.js"></script>
+  <script src="js/emotion.js"></script>
+  <script src="js/images.js"></script>
+  <script src="js/gifs.js"></script>
+  <script src="js/videos.js"></script>
+
+</body>
+
+</html>
